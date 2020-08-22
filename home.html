@@ -2,748 +2,152 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook</title>
-    <link rel="shortcut icon" href="img/icons/facebook.svg">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/owl.theme.default.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <title>Facebook</title>
 </head>
 
 <body>
-    <!--navbar-->
-    <nav>
-        <!--logo and search-->
-        <div class="left-side">
-            <div class="logo">
-                <img src="img/icons/facebook.svg" alt="">
-            </div>
-
-            <div class="search">
-                <input type="text" placeholder="Search Facebook" name="" id="">
-            </div>
+  <!-- Top section -->
+  <section id="home-top" class="pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div id="logo">
+            <a href="">
+              <i class="large material-icons pink-text"></i>
+            </a>
+          </div>
         </div>
-
-        <!--tab icons-->
-        <div class="tabs">
-            <div class="tab-icon active">
-                <div class="icon">
-                    <img src="img/icons/home.svg" alt="">
-                </div>
+        <div class="col-md-5">
+          <form class="d-flex" method="post" action='timeline.html'>
+            <div>
+              <label for="inlineFormInputName2">Email or phone</label>
+              <input required type="text" class="form-control mb-2 mr-sm-4" id="emailPhone_login" />
+            </div>
+            <div class="ml-3">
+              <label for="inlineFormInputName2">Password</label>
+              <input required type="password" class="form-control mb-2 mr-sm-2" id="password_login" />
             </div>
 
-            <div class="tab-icon">
-                <div class="icon has-notification">
-                    <img src="img/icons/flag.svg" alt="">
-                </div>
-            </div>
-
-            <div class="tab-icon">
-                <div class="icon">
-                    <img src="img/icons/tv.svg" alt="">
-                </div>
-            </div>
-
-            <div class="tab-icon">
-                <div class="icon">
-                    <img src="img/icons/users.svg" alt="">
-                </div>
-            </div>
-
-
-            <div class="tab-icon">
-                <div class="icon has-notification">
-                    <img src="img/icons/calendar.svg" alt="">
-                </div>
-            </div>
+            <button type="submit" class="btn btn-primary mb-2 ml-3" style="margin-top: 2rem;" onclick="login()">Submit</button>
+          </form>
         </div>
-
-        <!--right side-->
-        <div class="right-side">
-            <div class="user">
-                <div class="profile">
-                    <img src="img/avatar/hero.png" alt="">
-                </div>
-                <h4>Anne</h4>
-            </div>
-
-            <!--icons-->
-            <div class="user-icons">
-                <div class="icon">
-                    <img src="img/icons/plus.svg" alt="">
-                </div>
-
-                <a href="messenger.html"><div class="icon has-notification">
-                    <img src=" img/icons/messenger.svg" alt="">
-                </div></a>
-
-                <div class="icon">
-                    <img src="img/icons/bell.svg" alt="">
-                </div>
-
-                <div class="icon">
-                    <img src="img/icons/arrow.svg" alt="">
-                </div>
-            </div>
-        </div>
-    </nav>
-
-
-    <!--content-->
-    <div class="wrapper">
-        <div class="shortcuts">
-            <div class="first-col">
-                <div class="menu-item">
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/hero.png" alt="">
-                        </div>
-                        <h4>Anne</h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/icons/shield.svg" alt="">
-                        </div>
-                        <h4>COVID-19 Infromation Center </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/icons/colored-people.svg" alt="">
-                        </div>
-                        <h4>Friends </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/icons/colored-messenger.svg" alt="">
-                        </div>
-                        <h4>Messenger </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/icons/colored-flag.svg" alt="">
-                        </div>
-                        <h4>Pages </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row  border">
-                        <div class="icon more">
-                            <img src="img/icons/arrow-down.svg" alt="">
-                        </div>
-                        <h4>see more </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="second-col">
-
-                <h6 class="title">
-                    your shortcuts
-                </h6>
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/stories/st-1.jpeg" alt="">
-                        </div>
-                        <h4>Designers house </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/stories/st-2.jpeg" alt="">
-                        </div>
-                        <h4>Script house </h4>
-                    </div>
-                    <div class="menu-item">
-                        <div class="item-row">
-                            <div class="icon">
-                                <img src="img/stories/page-1.jpg" alt="">
-                            </div>
-                            <h4>ui ux Designers workshop </h4>
-                        </div>
-                    </div>
-
-                    <div class="menu-item">
-                        <div class="item-row">
-                            <div class="icon">
-                                <img src="img/stories/st-3.jpeg" alt="">
-                            </div>
-                            <h4>netflix movies recommends </h4>
-                        </div>
-                    </div>
-
-                    <div class="menu-item">
-                        <div class="item-row">
-                            <div class="icon">
-                                <img src="img/stories/page-2.jpg" alt="">
-                            </div>
-                            <h4>the futur </h4>
-                        </div>
-                    </div>
-
-
-                    <div class="menu-item">
-                        <div class="item-row">
-                            <div class="icon">
-                                <img src="img/stories/page-3.jpeg" alt="">
-                            </div>
-                            <h4>aj smart </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <!--posts-->
-        <div class="posts">
-            <!-- stories -->
-            <div class="stories">
-                <div class="owl-controls">
-                    <div class="owl-nav">
-                        <div class="controllers nxtBtn">
-                            <img src="img/icons/arrow-right.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="owl-carousel owl-theme slider">
-                    <div class="item">
-                        <div class="overlay first">
-                            <div class="create">
-                                <div class="icon">
-                                    <img src="img/icons/plus.svg" alt="">
-                                </div>
-                                <span>Create a Story</span>
-                            </div>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/avatar/hero.png" alt="">
-                        </div>
-                    </div>
-                    <!---->
-
-                    <div class="item">
-                        <div class="overlay">
-                            <div class="person">
-                                <div class="profile">
-                                    <img src="img/avatar/2.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4> samantha john</h4>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/stories/st-2.jpeg" alt="">
-                        </div>
-                    </div>
-                    <!---->
-
-                    <div class="item">
-                        <div class="overlay">
-                            <div class="person">
-                                <div class="profile">
-                                    <img src="img/avatar/3.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>Omar yassir</h4>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/stories/st-3.jpeg" alt="">
-                        </div>
-                    </div>
-                    <!---->
-
-                    <div class="item">
-                        <div class="overlay">
-                            <div class="person">
-                                <div class="profile">
-                                    <img src="img/avatar/4.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>amanda cerny</h4>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/stories/st-4.jpg" alt="">
-                        </div>
-                    </div>
-                    <!---->
-
-                    <div class="item">
-                        <div class="overlay">
-                            <div class="person">
-                                <div class="profile">
-                                    <img src="img/avatar/5.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>stacy lopez </h4>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/stories/st-1.jpeg" alt="">
-                        </div>
-                    </div>
-                    <!---->
-
-                    <div class="item">
-                        <div class="overlay">
-                            <div class="person">
-                                <div class="profile">
-                                    <img src="img/avatar/6.jpg" alt="">
-                                </div>
-                            </div>
-                            <h4>joshua simon</h4>
-                        </div>
-                        <div class="story-image">
-                            <img src="img/stories/st-1.jpeg" alt="">
-                        </div>
-                    </div>
-                    <!---->
-                </div>
-            </div>
-
-            <!--create post-->
-            <div class="timeline">
-                <div class="view create-post">
-                    <div class="input">
-                        <div class="user">
-                            <div class="profile">
-                                <img src="img/avatar/hero.png" alt="">
-                            </div>
-                        </div>
-                        <input type="text" placeholder="What on your mind, Anne?" name="" id="">
-                    </div>
-                    <div class="media">
-                        <div class="category">
-                            <div class="option">
-                                <div class="icon">
-                                    <img src="img/icons/video-live.svg" alt="">
-                                </div>
-                                <span>Live video</span>
-                            </div>
-
-                            <div class="option">
-                                <div class="icon">
-                                    <img src="img/icons/photos.svg" alt="">
-                                </div>
-                                <span>photo/video</span>
-                            </div>
-
-                            <div class="option">
-                                <div class="icon">
-                                    <img src="img/icons/smile.svg" alt="">
-                                </div>
-                                <span>feeling/activity</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="create-post view smaller-margin">
-                    <div class="upper">
-                        <div class="title">
-                            <div class="icon">
-                                <img src="img/icons/video-room.svg" alt="">
-                            </div>
-                            <span>Rooms</span>
-                        </div>
-                        <a href="">
-                            create
-                        </a>
-                    </div>
-
-                    <div class="owl-carousel owl-theme rooms">
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/hero.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/1.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/3.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/2.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/4.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/5.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                        <!---->
-                    </div>
-                </div>
-                <!--post container-->
-                <div class="view view-post-container smaller-margin">
-                    <div class="view-post">
-                        <div class="upper">
-                            <div class="d-flex">
-                                <div class="user">
-                                    <div class="profile">
-                                        <img src="img/avatar/5.jpg" alt="">
-                                    </div>
-                                </div>
-
-                                <div class="info">
-                                    <h6 class="name">
-                                        diana barry
-                                    </h6>
-                                    <span class="time">1 hour ago</span>
-                                </div>
-                            </div>
-
-                            <div class="dots">
-                                <div class="dot"></div>
-                            </div>
-                        </div>
-
-                        <div class="desc">
-                            <p>Travellimg to the future 🌟 , it's alraedy 2020 🙋‍♂🌈🌴</p>
-                        </div>
-
-                        <div class="post-img">
-                            <img src="img/posts/1.jpg" alt="">
-                        </div>
-
-                        <div class="actions-container">
-                            <div class="action">
-                                <div class="icon">
-                                    <img src="img/icons/thumbs-up.svg" alt="">
-                                </div>
-                                <span>
-                                    like
-                                </span>
-                            </div>
-
-                            <div class="action">
-                                <div class="icon">
-                                    <img src="img/icons/comment.svg" alt="">
-                                </div>
-                                <span>
-                                    comment
-                                </span>
-                            </div>
-
-                            <div class="action">
-                                <div class="icon">
-                                    <img src="img/icons/share.svg" alt="">
-                                </div>
-                                <span>
-                                    share
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="write-comment">
-                            <div class="user">
-                                <div class="profile">
-                                    <img src="img/avatar/hero.png" alt="">
-                                </div>
-                            </div>
-                            <div class="input">
-                                <input type="text" placeholder="Write a comment" name="" id="">
-                                <div class="media">
-                                    <div class="icon">
-                                        <img src="img/icons/camera.svg" alt="">
-                                    </div>
-
-                                    <div class="icon">
-                                        <img src="img/icons/image.svg" alt="">
-                                    </div>
-
-                                    <div class="icon">
-                                        <img src="img/icons/smile-2.svg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-                <!--people you may know-->
-                <div class="view friends smaller-margin">
-                    <div class="upper">
-                        <h6>people you may know</h6>
-                        <div class="dots">
-                            <div class="dot"></div>
-                        </div>
-                    </div>
-
-                    <div class="owl-carousel owl-theme people">
-                        <div class="item">
-                            <div class="person-img">
-                                <div class="icon">
-                                    &times;
-                                </div>
-                                <img src="img/avatar/1.jpg" alt="">
-                            </div>
-
-                            <div class="info">
-                                <h4>
-                                    rosie pie
-                                </h4>
-                                <span>4 mutual friend</span>
-                                <button>
-                                    add friend
-                                </button>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="person-img">
-                                <div class="icon">
-                                    &times;
-                                </div>
-                                <img src="img/avatar/4.jpg" alt="">
-                            </div>
-
-                            <div class="info">
-                                <h4>
-                                    sarah jones
-                                </h4>
-                                <span>4 mutual friend</span>
-                                <button>
-                                    add friend
-                                </button>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="person-img">
-                                <div class="icon">
-                                    &times;
-                                </div>
-                                <img src="img/avatar/3.jpg" alt="">
-                            </div>
-
-                            <div class="info">
-                                <h4>
-                                    chris doe
-                                </h4>
-                                <span>4 mutual friend</span>
-                                <button>
-                                    add friend
-                                </button>
-                            </div>
-                        </div>
-                        <!---->
-
-                        <div class="item">
-                            <div class="person-img">
-                                <div class="icon">
-                                    &times;
-                                </div>
-                                <img src="img/avatar/2.jpg" alt="">
-                            </div>
-
-                            <div class="info">
-                                <h4>
-                                    katie adam
-                                </h4>
-                                <span>4 mutual friend</span>
-                                <button>
-                                    add friend
-                                </button>
-                            </div>
-                        </div>
-                        <!---->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--shortcuts 2 -events and chat- -->
-        <div class="shortcuts shortcuts-2">
-            <div class="second-col first-col">
-                <div class="menu-item">
-                    <div class="upper">
-                        <h6>Your pages</h6>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/stories/st-2.jpeg" alt="">
-                        </div>
-                        <h4>Script house </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon">
-                            <img src="img/stories/st-1.jpeg" alt="">
-                        </div>
-                        <h4>omar ui design </h4>
-                    </div>
-                </div>
-
-                <div class="menu-item">
-                    <div class="item-row  border">
-                        <div class="icon more">
-                            <img src="img/icons/arrow-down.svg" alt="">
-                        </div>
-                        <h4>see more </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="second-col">
-
-                <h6 class="title">
-                    birthdays
-                </h6>
-                <div class="menu-item">
-                    <div class="item-row">
-                        <div class="icon not-rounded">
-                            <img src="img/icons/gift.svg" alt="">
-                        </div>
-                        <h4>it's diana berry's birthday </h4>
-                    </div>
-                </div>
-                <div class="online">
-                    <h6 class="title">
-                        contact
-                    </h6>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/1.jpg" alt="">
-                        </div>
-                        <h4>diana berry</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/4.jpg" alt="">
-                        </div>
-                        <h4>rosie pie</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/2.jpg" alt="">
-                        </div>
-                        <h4>samantha jones</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/3.jpg" alt="">
-                        </div>
-                        <h4>john doe</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/4.jpg" alt="">
-                        </div>
-                        <h4>stacy jr.</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/5.jpg" alt="">
-                        </div>
-                        <h4>christin sam</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/6.jpg" alt="">
-                        </div>
-                        <h4>kate simon</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/1.jpg" alt="">
-                        </div>
-                        <h4>diana berry</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/2.jpg" alt="">
-                        </div>
-                        <h4>sarah cerny</h4>
-                    </div>
-
-                    <div class="user">
-                        <div class="profile">
-                            <img src="img/avatar/3.jpg" alt="">
-                        </div>
-                        <h4>josh doe</h4>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- home page middle sectoin -->
+  <section id="home-middle" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="no-user" style="text-align: center;">
+            <h1 style="color: #0069d9; font-weight: bolder; font-size: 5rem">
+              Facebook
+            </h1>
+            <p>
+              Facebook helps you connect and share with the people in your
+              life.
+            </p>
+            <img src="img/indexBgImg.png" class="responsive-img" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="registration">
+            <h2>Create a new account</h2>
+            <p>It's quick and easy.</p>
+          </div>
+          <div class="registration-form">
+            <form class="" method="post" action='timeline.html'>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="firstName" placeholder="First name" />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="text" class="form-control" id="surname" placeholder="Surname" />
+                </div>
 
+                <div class="col-md-12 mb-3">
+                  <input type="text" class="form-control" id="mobileEmail"
+                    placeholder="Mobile number or email address" />
+                </div>
+                <div class="col-md-12 mb-3">
+                  <input type="password" class="form-control" id="password" placeholder="New password" />
+                </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/index.js"></script>
+                <div class="col-md-6 mb-3">
+                  <div class="input-group datepicker" data-provide="datepicker">
+                    <input type="date" class="form-control datepicker" id="date"/>
+                    <div class="input-group-addon">
+                      <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                  <div class="row">
+                    <div class="col s4">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="gender" type="radio" checked id="FEMALE"/>
+                          <span>Female</span>
+                        </label>
+                      </p>
+                    </div>
+                    <div class="col s4">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="gender" type="radio" checked id="MALE"/>
+                          <span>Male</span>
+                        </label>
+                      </p>
+                    </div>
+                    <div class="col s4">
+                      <p>
+                        <label>
+                          <input class="with-gap" name="gender" type="radio" checked id="OTHERS"/>
+                          <span>Others</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col s12">
+                  <p>
+                    By clicking Sign Up, you agree to our Terms,
+                    <a href="">Data Policy</a> and
+                    <a href="">Cookie Policy</a> . You may receive SMS
+                    notifications from us and can opt out at any time.
+                  </p>
+                </div>
+              </div>
+
+              <button class="btn btn-primary btn-lg" type="submit" name="action" onclick="register()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./js/jquery.js"></script>
+  <script src="./functions.js"></script>
+  <script src="./js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="*"></script>
+  <script src="./js/bootstrap.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
