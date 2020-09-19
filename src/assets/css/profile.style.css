@@ -245,7 +245,8 @@ section {
 }
 
 .pattern:before {
-    background: #088dcd url("../images/dot-pattern.png") repeat scroll 0 0;
+    /* background: #088dcd url("../images/dot-pattern.png") repeat scroll 0 0; */
+    background: #088dcd repeat scroll 0 0;
     opacity: 0.45;
 }
 
@@ -2548,7 +2549,7 @@ footer .logo {
 }
 
 .theme-layout::before {
-    background: url(../images/dot-pattern.png);
+    /* background: url(../images/dot-pattern.png); */
     background-repeat: repeat;
     content: "";
     height: 100%;

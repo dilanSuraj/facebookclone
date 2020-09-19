@@ -1,67 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+import React from 'react';
+import shortCut_facebookicon from '../assets/img/icons/facebook.svg'
+export default class MessengerComponent extends React.Component {
 
-<head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <link rel="shortcut icon" href="img/icons/messenger.svg">
-    <link href="https://unpkg.com/tailwindcss@1.4.6/dist/tailwind.min.css" rel="stylesheet"/>
-    <style>
-        /* can be configured in tailwind.config.js */
-        .group:hover .group-hover\:block {
-            display: block;
-        }
-	.hover\:w-64:hover {
-    	    width: 45%;
-    	}
-	/* NO NEED THIS CSS - just for custom scrollbar which can also be configured in tailwind.config.js*/
-	::-webkit-scrollbar {
-	    width: 2px;
-	    height: 2px;
-	}
-	::-webkit-scrollbar-button {
-	    width: 0px;
-	    height: 0px;
-	}
-	::-webkit-scrollbar-thumb {
-	    background: #2d3748;
-	    border: 0px none #ffffff;
-	    border-radius: 50px;
-	}
-	::-webkit-scrollbar-thumb:hover {
-	    background: #2b6cb0;
-	}
-	::-webkit-scrollbar-thumb:active {
-	    background: #000000;
-	}
-	::-webkit-scrollbar-track {
-	    background: #1a202c;
-	    border: 0px none #ffffff;
-	    border-radius: 50px;
-	}
-	::-webkit-scrollbar-track:hover {
-	    background: #666666;
-	}
-	::-webkit-scrollbar-track:active {
-	    background: #333333;
-	}
-	::-webkit-scrollbar-corner {
-	    background: transparent;
-	}
-    </style>
-</head>
-<body>
+    constructor(props) {
+        super(props);
+    }
 
-<!-- Messenger Clone -->
-<div class="h-screen w-full flex antialiased text-gray-200 bg-gray-900 overflow-hidden">
+    render(){
+        return(
+            <div class="h-screen w-full flex antialiased text-gray-200 bg-gray-900 overflow-hidden">
     <div class="flex-1 flex flex-col">
         <main class="flex-grow flex flex-row min-h-0">
             <section class="flex flex-col flex-none overflow-auto w-24 hover:w-64 group lg:max-w-sm md:w-2/5 transition-all duration-300 ease-in-out">
                 <div class="header p-4 flex flex-row justify-between items-center flex-none">
-                    <a href="timeline.html"><div class="w-16 h-16 relative flex flex-shrink-0">
+                    <a href="/home"><div class="w-16 h-16 relative flex flex-shrink-0">
                         <img class="rounded-full w-full h-full object-cover" alt="ravisankarchinnam"
-                             src="img/icons/facebook.svg"/>
+                             src={shortCut_facebookicon}/>
                     </div></a>
                     <p class="text-md font-bold hidden md:block group-hover:block">Chats</p>
                     <a href="#" class="block rounded-full hover:bg-gray-700 bg-gray-800 w-10 h-10 p-2">
@@ -868,7 +822,7 @@ C15.786,7.8,14.8,8.785,14.8,10s0.986,2.2,2.201,2.2S19.2,11.215,19.2,10S18.216,7.
         </main>
     </div>
 </div>
+        );
+    }
 
-</body>
-
-</html>
+}
